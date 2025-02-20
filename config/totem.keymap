@@ -100,7 +100,7 @@
                  &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y    &kp U          &kp I         &kp O        &kp P
                  &hrm LALT A  &hrm LGUI S  &hrm LCTRL D  &hrm LSHFT F  &kp G        &kp H    &hrm RSHFT J   &hrm RCTRL K  &hrm RGUI L  &hrm RALT SEMICOLON
 &kh_hs_tapdance  &kp Z        &kp X        &kp C         &kp V         &kp B        &kp N    &kp M          &kp COMMA     &kp DOT      &kp FSLH             &kp SQT
-                                           &lt 1 ESCAPE  &lt 2 TAB     &kp SPACE    &kp RET  &kp BACKSPACE  &kp DELETE
+                                           &lt 1 ESCAPE  &kp SPACE     &lt 2 TAB    &kp RET  &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -110,7 +110,7 @@
         &trans  &trans  &trans  &trans  &kp MINUS              &num_layer_braces       &kp N7                     &kp N8  &kp N9  &kp MINUS
         &trans  &trans  &trans  &trans  &num_layer_brackets    &num_layer_parenthesis  &hrm RIGHT_SHIFT NUMBER_4  &kp N5  &kp N6  &kp EQUAL
 &trans  &trans  &trans  &trans  &trans  &num_layer_braces      &num_layer_brackets     &kp N1                     &kp N2  &kp N3  &kp NON_US_BACKSLASH  &kp GRAVE
-                        &trans  &trans  &trans                 &trans                  &trans                     &kp N0
+                        &trans  &trans  &trans                 &trans                  &kp RIGHT_GUI              &kp N0
             >;
         };
 
@@ -136,9 +136,9 @@
         func {
             label = "ADJU";
             bindings = <
-        &kp F12  &kp F7  &kp F8  &kp F9  &trans    &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &out OUT_TOG  &trans
-        &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans      &kp RSHIFT  &kp RCTRL   &kp RALT      &kp RGUI
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans      &trans      &trans      &trans        &trans    &trans
+        &kp F12  &kp F7  &kp F8  &kp F9  &trans    &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &out OUT_TOG   &trans
+        &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans      &kp RSHIFT  &kp RCTRL   &kp RIGHT_GUI  &kp RIGHT_ALT
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans      &trans      &trans      &trans         &trans         &trans
                          &trans  &trans  &trans    &trans      &trans      &trans
             >;
         };
