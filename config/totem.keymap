@@ -99,7 +99,7 @@
                  &kp Q        &kp W        &kp E         &kp R         &kp T        &kp Y    &kp U         &kp I         &kp O        &kp P
                  &hrm LALT A  &hrm LGUI S  &hrm LCTRL D  &hrm LSHFT F  &kp G        &kp H    &hrm RSHFT J  &hrm RCTRL K  &hrm RGUI L  &hrm RALT SEMICOLON
 &kh_hs_tapdance  &kp Z        &kp X        &kp C         &kp V         &kp B        &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH             &kp SQT
-                                           &lt 1 ESCAPE  &kp SPACE     &lt 2 TAB    &kp RET  &bckspcdel    &trans
+                                           &lt 1 ESCAPE  &kp SPACE     &lt 2 TAB    &kp RET  &bckspcdel    &mo 2
             >;
         };
 
