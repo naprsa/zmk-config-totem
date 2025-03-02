@@ -64,7 +64,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <170>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -96,10 +96,10 @@
         base {
             label = "BASE";
             bindings = <
-                 &kp Q  &kp W            &kp E         &kp R         &kp T        &kp Y    &kp U         &kp I         &kp O        &kp P
-                 &kp A  &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LSHFT F  &kp G        &kp H    &hrm RSHFT J  &hrm RCTRL K  &hrm RGUI L  &hrm RALT SEMICOLON
-&kh_hs_tapdance  &kp Z  &kp X            &kp C         &kp V         &kp B        &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH             &kp SQT
-                                         &kp LEFT_GUI  &lt 2 SPACE   &lt 1 TAB    &kp RET  &bckspcdel    &mo 2
+                 &kp Q  &kp W            &kp E         &kp R                       &kp T        &kp Y    &kp U         &kp I         &kp O        &kp P
+                 &kp A  &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LSHFT F                &kp G        &kp H    &hrm RSHFT J  &hrm RCTRL K  &hrm RGUI L  &hrm RALT SEMICOLON
+&kh_hs_tapdance  &kp Z  &kp X            &kp C         &kp V                       &kp B        &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH             &kp SQT
+                                         &kp LEFT_GUI  &mt LA(LS(LEFT_GUI)) SPACE  &lt 1 TAB    &kp RET  &bckspcdel    &mo 2
             >;
         };
 
@@ -115,9 +115,9 @@
 
         navi {
             bindings = <
-       &none   &none   &none   &none   &kp K_MUTE           &kp K_UNDO  &kp PAGE_DOWN  &kp UP_ARROW    &kp PG_UP  &none
-       &trans  &trans  &trans  &trans  &kp C_VOLUME_UP      &kp HOME    &kp LEFT       &kp DOWN_ARROW  &kp RIGHT  &kp END
-&none  &none   &none   &none   &trans  &kp C_VOLUME_DOWN    &kp K_REDO  &none          &none           &none      &none    &none
+       &none   &none   &none   &none   &kp K_MUTE           &kp K_UNDO  &kp PAGE_DOWN  &trans          &kp PG_UP  &none
+       &trans  &trans  &trans  &trans  &kp C_VOLUME_UP      &kp HOME    &kp LEFT       &kp UP_ARROW    &kp RIGHT  &kp END
+&none  &none   &none   &none   &trans  &kp C_VOLUME_DOWN    &kp K_REDO  &none          &kp DOWN_ARROW  &none      &none    &none
                        &none   &trans  &mo 3                &trans      &none          &none
             >;
         };
