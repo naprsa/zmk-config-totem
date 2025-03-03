@@ -118,7 +118,7 @@
                  &kp Q            &kp W                &kp E            &kp R         &kp T        &kp Y    &kp U         &kp I             &kp O                 &kp P
                  &hrm LEFT_ALT A  &hrm LEFT_CONTROL S  &hrm LEFT_GUI D  &hrm LSHFT F  &kp G        &kp H    &hrm RSHFT J  &hrm RIGHT_GUI K  &hrm RIGHT_CONTROL L  &hrm RALT SEMICOLON
 &kh_hs_tapdance  &kp Z            &kp X                &kp C            &kp V         &kp B        &kp N    &kp M         &kp COMMA         &kp DOT               &kp FSLH             &kp SQT
-                                                       &cmd_esc_td      &lt 2 SPACE   &lt 1 TAB    &kp RET  &bckspcdel    &kp TAB
+                                                       &cmd_esc_td      &lt 1 SPACE   &lt 2 TAB    &kp RET  &bckspcdel    &kp TAB
             >;
         };
 
@@ -127,7 +127,7 @@
         &none          &none             &kp LS(TAB)   &kp LC(TAB)     &kp K_MUTE           &kp K_UNDO  &kp PAGE_DOWN  &tog 3          &kp PG_UP  &none
         &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp C_VOLUME_UP      &kp HOME    &kp LEFT       &kp UP_ARROW    &kp RIGHT  &kp END
 &tog 0  &undo_redo_td  &kp LG(X)         &kp LG(C)     &kp LG(V)       &kp C_VOLUME_DOWN    &kp K_REDO  &none          &kp DOWN_ARROW  &none      &none    &none
-                                         &trans        &trans          &trans               &kp ENTER   &kp SPACE      &kp TAB
+                                         &trans        &trans          &trans               &trans      &trans         &kp TAB
             >;
         };
 
