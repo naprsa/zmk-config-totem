@@ -142,10 +142,10 @@
 
         navi {
             bindings = <
-        &none          &none             &kp LS(TAB)   &kp LC(TAB)     &kp K_MUTE           &kp K_UNDO  &kp HOME  &none           &kp PG_UP      &none
-        &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp C_VOLUME_UP      &none       &kp LEFT  &kp UP_ARROW    &kp RIGHT      &none
-&tog 0  &undo_redo_td  &kp LG(X)         &kp LG(C)     &kp LG(V)       &kp C_VOLUME_DOWN    &kp K_REDO  &kp END   &kp DOWN_ARROW  &kp PAGE_DOWN  &none  &tog 4
-                                         &trans        &trans          &trans               &trans      &trans    &kp TAB
+        &none          &none             &kp LS(TAB)   &kp LC(TAB)     &kp K_MUTE           &kp K_UNDO      &kp HOME  &none           &kp PG_UP      &none
+        &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp C_VOLUME_UP      &kp SCROLLLOCK  &kp LEFT  &kp UP_ARROW    &kp RIGHT      &none
+&tog 0  &undo_redo_td  &kp LG(X)         &kp LG(C)     &kp LG(V)       &kp C_VOLUME_DOWN    &kp K_REDO      &kp END   &kp DOWN_ARROW  &kp PAGE_DOWN  &none  &tog 4
+                                         &trans        &trans          &trans               &trans          &trans    &kp TAB
             >;
         };
 
@@ -171,10 +171,10 @@
         settings {
             label = "settings";
             bindings = <
-        &trans  &kp F9  &kp F10  &kp F11  &kp F12    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-        &trans  &kp F5  &kp F6   &kp F7   &kp F8     &kp C_BRI_UP  &trans        &bt BT_NXT    &trans        &trans
-&tog 0  &trans  &kp F1  &kp F2   &kp F3   &kp F4     &kp C_BRI_DN  &trans        &bt BT_PRV    &trans        &bt BT_CLR    &bt BT_CLR_ALL
-                        &trans   &trans   &trans     &kp GLOBE     &trans        &trans
+        &none  &kp F9  &kp F10  &kp F11  &kp F12    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+        &none  &kp F5  &kp F6   &kp F7   &kp F8     &kp C_BRI_UP  &none         &bt BT_NXT    &none         &none
+&tog 0  &none  &kp F1  &kp F2   &kp F3   &kp F4     &kp C_BRI_DN  &none         &bt BT_PRV    &none         &bt BT_CLR    &bt BT_CLR_ALL
+                       &none    &none    &none      &kp GLOBE     &none         &none
             >;
         };
     };
