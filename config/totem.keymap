@@ -107,6 +107,24 @@
             #binding-cells = <0>;
             bindings = <&kp LG(Z)>, <&kp LG(LS(Z))>;
         };
+
+        up_n_scroll: up_n_scroll {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UP_N_SCROLL";
+            bindings = <&kp UP_ARROW>, <&kp K_SCROLL_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        down_n_scroll: down_n_scroll {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOWN_N_SCROLL";
+            bindings = <&kp DOWN_ARROW>, <&kp K_SCROLL_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -124,10 +142,10 @@
 
         navi {
             bindings = <
-        &none          &none             &kp LS(TAB)   &kp LC(TAB)     &kp K_MUTE           &kp K_UNDO  &kp PAGE_DOWN  &tog 3          &kp PG_UP  &none
-        &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp C_VOLUME_UP      &kp HOME    &kp LEFT       &kp UP_ARROW    &kp RIGHT  &kp END
-&tog 0  &undo_redo_td  &kp LG(X)         &kp LG(C)     &kp LG(V)       &kp C_VOLUME_DOWN    &kp K_REDO  &none          &kp DOWN_ARROW  &none      &none    &none
-                                         &trans        &trans          &trans               &trans      &trans         &kp TAB
+        &none          &none             &kp LS(TAB)   &kp LC(TAB)     &kp K_MUTE           &kp K_UNDO  &kp HOME  &none           &kp PG_UP      &none
+        &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp C_VOLUME_UP      &none       &kp LEFT  &kp UP_ARROW    &kp RIGHT      &none
+&tog 0  &undo_redo_td  &kp LG(X)         &kp LG(C)     &kp LG(V)       &kp C_VOLUME_DOWN    &kp K_REDO  &kp END   &kp DOWN_ARROW  &kp PAGE_DOWN  &none  &tog 4
+                                         &trans        &trans          &trans               &trans      &trans    &kp TAB
             >;
         };
 
@@ -143,10 +161,10 @@
 
         mouse {
             bindings = <
-        &none   &trans                    &trans                      &trans                 &trans       &kp LC(NUMBER_1)  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans
-        &trans  &hrm LEFT_GUI LEFT_ARROW  &hrm LEFT_CONTROL UP_ARROW  &hrm LEFT_SHIFT RIGHT  &trans       &msc SCRL_UP      &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans
-&tog 0  &trans  &trans                    &kp DOWN_ARROW              &trans                 &trans       &msc SCRL_DOWN    &trans          &mmv MOVE_DOWN  &trans           &trans  &trans
-                                          &kp TAB                     &trans                 &mkp LCLK    &mkp RCLK         &none           &trans
+        &none  &kp LG(X)                 &kp LG(C)                   &kp LG(V)              &none        &kp LC(NUMBER_1)  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none
+        &none  &hrm LEFT_GUI LEFT_ARROW  &hrm LEFT_CONTROL UP_ARROW  &hrm LEFT_SHIFT RIGHT  &none        &msc SCRL_UP      &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none
+&tog 0  &none  &kp LG(X)                 &kp DOWN_ARROW              &none                  &none        &msc SCRL_DOWN    &none           &mmv MOVE_DOWN  &none            &none  &none
+                                         &kp TAB                     &trans                 &mkp LCLK    &mkp RCLK         &none           &none
             >;
         };
 
@@ -154,9 +172,9 @@
             label = "settings";
             bindings = <
         &trans  &kp F9  &kp F10  &kp F11  &kp F12    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-        &trans  &kp F5  &kp F6   &kp F7   &kp F8     &kp C_BRI_UP  &trans        &trans        &trans        &trans
-&trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4     &kp C_BRI_DN  &trans        &trans        &trans        &trans        &trans
-                        &trans   &trans   &trans     &trans        &trans        &trans
+        &trans  &kp F5  &kp F6   &kp F7   &kp F8     &kp C_BRI_UP  &trans        &bt BT_NXT    &trans        &trans
+&tog 0  &trans  &kp F1  &kp F2   &kp F3   &kp F4     &kp C_BRI_DN  &trans        &bt BT_PRV    &trans        &bt BT_CLR    &bt BT_CLR_ALL
+                        &trans   &trans   &trans     &kp GLOBE     &trans        &trans
             >;
         };
     };
