@@ -19,8 +19,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -35,11 +33,13 @@
         navi_layer {
             bindings = <&tog 1>;
             key-positions = <33 36>;
+            timeout-ms = <70>;
         };
 
         mouse_layer {
             bindings = <&tog 3>;
             key-positions = <34 35>;
+            timeout-ms = <70>;
         };
     };
 
@@ -163,7 +163,7 @@
             bindings = <
         &none  &kp LG(X)                 &kp LG(C)                   &kp LG(V)              &none        &kp LC(NUMBER_1)  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none
         &none  &hrm LEFT_GUI LEFT_ARROW  &hrm LEFT_CONTROL UP_ARROW  &hrm LEFT_SHIFT RIGHT  &none        &msc SCRL_UP      &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &none
-&tog 0  &none  &kp LG(X)                 &kp DOWN_ARROW              &none                  &none        &msc SCRL_DOWN    &none           &mmv MOVE_DOWN  &none            &none  &none
+&tog 0  &none  &none                     &kp DOWN_ARROW              &none                  &none        &msc SCRL_DOWN    &none           &mmv MOVE_DOWN  &none            &none  &none
                                          &kp TAB                     &trans                 &mkp LCLK    &mkp RCLK         &none           &none
             >;
         };
